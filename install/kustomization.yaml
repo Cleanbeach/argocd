@@ -4,8 +4,8 @@ namespace: argocd
 bases:
   - github.com/argoproj/argo-cd/manifests/ha/cluster-install?ref=v2.1.1
 resources:
-  - resources/namespace.yaml
-  - patch/argocd-cm.yaml
-  - patch/argocd-server-deployment.yaml
-  - patch/argocd-repo-server-deployment.yaml
-  - patch/argocd-applications-controller-statefulset.yaml
+  - kustomization-install/resources/namespace.yaml
+  - kustomization-install/patch/argocd-cm.yaml
+  - kustomization-install/patch/argocd-server-deployment.yaml
+  - kustomization-install/patch/argocd-repo-server-deployment.yaml
+  - kustomization-install/patch/argocd-applications-controller-statefulset.yaml
