@@ -6,4 +6,5 @@ bases:
 resources:
   - resources/namespace.yaml
   - patch/argocd-cm.yaml
+  - patch/argocd-server-deployment.yaml
   
