@@ -8,4 +8,5 @@ resources:
   - patch/argocd-cm.yaml
   - patch/argocd-server-deployment.yaml
   - patch/argocd-repo-server-deployment.yaml
+  - patch/argocd-applications-controller-statefulset.yaml
   
