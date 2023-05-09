@@ -3,11 +3,11 @@ kind: Deployment
 metadata:
   name: argocd-repo-server
 spec:
-  replicas: 3
+  replicas: 2
   template:
     spec:
       containers:
         - name: argocd-repo-server
           env:
             - name: "ARGOCD_EXEC_TIMEOUT"
-              value: "3"
+              value: "2"
