@@ -3,11 +3,11 @@ kind: Deployment
 metadata:
   name: argocd-server
 spec:
-  replicas: 1
+  replicas: 3
   template:
     spec:
       containers:
         - name: argocd-server
           env:
             - name: ARGOCD_API_SERVER_REPLICAS
-              value: "1"
+              value: "3"
